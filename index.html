@@ -48,6 +48,19 @@ nav {
   color: var(--navy);
   letter-spacing: -0.3px;
 }
+  .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.nav-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--orange);
+}
 .nav-logo span { color: var(--orange); }
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a {
@@ -555,7 +568,14 @@ footer span { color: var(--orange); }
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">ruby<span>.</span>portfolio</div>
+  <a href="#home" class="nav-logo">
+    <img 
+      class="nav-avatar" 
+      src="https://res.cloudinary.com/dotejpjfv/image/upload/v1776701084/n2oohiv8lpj5uddwwsyu.png" 
+      alt="Nor Rabiatul Adawiyah"
+    >
+    ruby<span>.</span>portfolio
+  </a>
   <ul class="nav-links">
     <li><a href="#projek">Projek</a></li>
     <li><a href="#kelebihan">Kelebihan</a></li>
