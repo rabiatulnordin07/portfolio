@@ -228,14 +228,13 @@ nav {
   display: flex; align-items: center; gap: 14px;
 }
 .chip-avatar {
-  width: 48px; height: 48px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--navy), var(--blue));
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'DM Serif Display', serif;
-  font-size: 1rem;
-  color: var(--white);
+  object-fit: cover;
+  border: 2px solid var(--orange);
   flex-shrink: 0;
+}
 }
 .chip-name { font-size: 0.85rem; font-weight: 700; color: var(--navy); }
 .chip-role { font-size: 0.7rem; color: var(--muted); }
@@ -604,8 +603,11 @@ footer span { color: var(--orange); }
   </div>
 
   <div class="hero-visual">
-    <div class="profile-chip">
-      <div class="chip-avatar">NRA</div>
+    <img 
+  class="chip-avatar" 
+  src="https://res.cloudinary.com/dotejpjfv/image/upload/v1776701084/n2oohiv8lpj5uddwwsyu.png" 
+  alt="Nor Rabiatul Adawiyah"
+>
       <div>
         <div class="chip-name">Nor Rabiatul Adawiyah</div>
         <div class="chip-role">Pendidik · Pembangun Digital · Sik, Kedah</div>
